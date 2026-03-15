@@ -38,7 +38,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--border-primary);
   }
   
   html {
@@ -46,13 +46,17 @@
   }
   
   body {
-    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
-    @apply font-semibold tracking-tight;
+    font-weight: 600;
+    letter-spacing: -0.025em;
   }
 }
 
