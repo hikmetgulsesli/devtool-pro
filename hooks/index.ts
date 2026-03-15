@@ -2,5 +2,4 @@
  * Hook exports
  */
 
-export { useKeyboard } from './useKeyboard';
-export type { UseKeyboardOptions } from './useKeyboard';
+// Hooks will be exported here as they are added
